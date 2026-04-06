@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-32">
           <div className="text-center lg:text-left min-w-[200px]">
             <div className="text-[9px] font-black uppercase tracking-[0.4em] text-gold mb-3">The Boutique</div>
-            <div className="text-black font-black text-sm uppercase tracking-tighter leading-relaxed">
+            <div className="text-[#111111] font-black text-sm uppercase tracking-tighter leading-relaxed">
               300 Rector Place,<br />
               New York, NY 10280
             </div>
@@ -42,17 +42,17 @@ export default function Footer() {
             <div className="text-[9px] font-black uppercase tracking-[0.4em] text-gold mb-3">Connect</div>
             <a 
               href="mailto:lepetspa@lepetspabpc.com" 
-              className="text-black font-black text-sm uppercase tracking-tighter hover:text-gold transition-colors"
+              className="text-[#111111] font-black text-sm uppercase tracking-tighter hover:text-gold transition-colors block"
             >
               lepetspa@lepetspabpc.com
             </a>
           </div>
         </div>
 
-        {/* Rights */}
+        {/* Branding & Rights */}
         <div className="text-center lg:text-right">
-          <div className="text-[9px] font-black uppercase tracking-[0.4em] text-black/20">
-            © Le Pet Spa. All Rights Reserved.
+          <div className="text-[9px] font-black uppercase tracking-[0.4em] text-[#111111]/20">
+            Le Pet Spa. Artisan Pet Care.
           </div>
         </div>
       </div>

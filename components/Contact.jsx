@@ -236,14 +236,14 @@ export default function Contact() {
                 target={item.id === "contact-address" ? "_blank" : undefined}
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02, x: 5 }}
-                className="flex items-center gap-6 p-8 md:p-10 rounded-[30px] bg-white border border-black/5 shadow-glass-sm transition-all group overflow-hidden relative"
+                className="flex items-center gap-6 p-8 md:p-10 rounded-[30px] bg-white boutique-border shadow-2xl transition-all group overflow-hidden relative"
               >
                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-cream flex items-center justify-center text-2xl md:text-3xl group-hover:bg-gold-light/20 transition-colors relative z-10 shrink-0">
                   {item.icon}
                 </div>
                 <div className="flex-1 min-w-0 relative z-10">
                   <div className="text-[8px] md:text-[9px] font-black uppercase tracking-[0.4em] text-gold mb-3">{item.label}</div>
-                  <div className="text-lg md:text-xl font-black text-black tracking-tighter truncate">
+                  <div className="text-lg md:text-xl font-black text-[#111111] tracking-tighter truncate">
                     {item.value}
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function Contact() {
             ))}
 
             {/* Social Hub - High Contrast SVGs */}
-            <div className="p-10 md:p-12 rounded-[40px] bg-white shadow-glass-lg border border-black/5 relative overflow-hidden">
+            <div className="p-10 md:p-12 rounded-[40px] bg-white shadow-2xl boutique-border relative overflow-hidden">
                <div className="text-[10px] font-black uppercase tracking-[0.4em] text-gold mb-10">Boutique Social</div>
                <div className="grid grid-cols-4 gap-4 md:gap-6">
                  {socialIcons.map((social) => (
@@ -267,7 +267,7 @@ export default function Contact() {
                      <div className="transition-transform duration-500 group-hover:scale-110">
                         {social.icon}
                      </div>
-                     <span className="text-[8px] font-black uppercase tracking-widest text-black/40 group-hover:text-black transition-colors">{social.id}</span>
+                     <span className="text-[8px] font-black uppercase tracking-widest text-[#111111]/40 group-hover:text-[#111111] transition-colors">{social.id}</span>
                    </motion.a>
                  ))}
                </div>
@@ -278,7 +278,7 @@ export default function Contact() {
                href={`mailto:${business.contact.email}`}
                whileHover={{ scale: 1.02 }}
                whileTap={{ scale: 0.98 }}
-               className="mt-4 p-10 md:p-12 rounded-[40px] bg-gold text-white text-center shadow-gold-lg relative group overflow-hidden"
+               className="mt-4 p-10 md:p-12 rounded-[40px] bg-forest-gradient text-white text-center shadow-gold-lg relative group overflow-hidden"
             >
                <span className="text-xs font-black uppercase tracking-[0.4em] block mb-3 opacity-80">Ready to Book?</span>
                <span className="text-2xl md:text-3xl font-black tracking-tighter">Contact Our Master Groomers</span>
